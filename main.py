@@ -1,10 +1,10 @@
-import discord
+import discord, os
 from dotenv import load_dotenv
 import openai
 
 load_dotenv()
-token = os.environ['discord_token']
-openai.api_key = os.environ['sk-..........']
+token = os.environ['BOT_TOKEN']
+openai.api_key = os.environ['OPENAI_API_KEY']
 
 msg_system = "Tu es un agent intelligent. Ton rôle est de répondre aux questions."
 
